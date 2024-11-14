@@ -1,0 +1,11 @@
+ScreenToLayers, ekran görüntülerini, her ekran öğesini ayrı bir katman olarak koruyarak tamamen düzenlenebilir Photoshop belgeleri oluşturarak yakalama biçiminizi dönüştürür. İster tasarım yapıyor, ister geliştiriyor, ister belgelendiriyorsanız, ScreenToLayers, ekranınızdaki her şeyi tek tıklamayla yakalamanızı sağlar ve sonrasında Photoshop, Pixelmator, Acorn veya PSD dosyalarını açabilen herhangi bir görüntü düzenleyicisinde sonsuz düzenlemeler ve iyileştirmeler yapmanıza olanak tanır.
+
+• Zahmetsiz Katmanlı Ekran Görüntüleri: ScreenToLayers, ekranınızdaki her bileşeni bir PSD dosyasındaki ayrı bir katman olarak otomatik olarak yakalar. Simge, pencere, arka plan gibi her öğe, nihai görüntünüz üzerinde tam kontrol sağlamak için izole edilir.
+
+• Baskı Yapmadan Hassasiyet: Ekran görüntünüzü tek seferde mükemmelleştirmenize gerek yoktur. Her öğe ayrı bir katman olarak mevcut olduğundan, Photoshop'ta sonradan basitçe konumlandırma, boyut, renkler ve daha fazlasını ayarlayabilirsiniz. Bu, ekran görüntülerinizi mükemmel bir şekilde ince ayar yapmak için nihai araçtır.
+
+• Tasarımcılar ve Geliştiriciler İçin İdeal: ScreenToLayers, taslaklar oluşturmak, UI tasarımlarını geliştirmek veya arayüz sorunlarını giderirken tam ve düzenlenebilir ekran görüntülerine ihtiyaç duyanlar için paha biçilmezdir. Hem geliştiriciler hem de tasarımcılar, bu uygulamanın ekran görüntüsü sonrası düzenlemeler için sunduğu esneklik ve derinliği takdir edecektir.
+
+ScreenToLayers, açık kaynaklı bir projedir, yani topluluğun katkılarıyla tasarlanmış ve iyileştirmeler ve katkılar için açıktır. Fikirlerinizi veya kodunuzu katkı sağlayarak canlı bir topluluğun parçası olun.
+
+Hizmet Şartları ve Gizlilik Politikası: https://neededapps.com/legal

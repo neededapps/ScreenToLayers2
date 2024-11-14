@@ -1,0 +1,110 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "567EA7E3",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6738107722",
+      "localizations" : [
+        {
+          "description" : "Give a donation to help with the development",
+          "displayName" : "Buy me a Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jeremyvizzini.screentolayers.osx.buycoffee",
+      "referenceName" : "STL Buy me a Coffee Consumable",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6738129443",
+      "localizations" : [
+        {
+          "description" : "Give a donation to help with the development.",
+          "displayName" : "Buy me a Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jeremyvizzini.screentolayers.osx.buycoffeeonce",
+      "referenceName" : "STL Buy me a Coffee Non-Comsumable",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "1077317077",
+    "_developerTeamID" : "JVTX6KC453",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 753197821.26890802,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

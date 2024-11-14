@@ -1,0 +1,11 @@
+ScreenToLayers transformerer måten du tar skjermbilder på ved å lage fullt redigerbare Photoshop-dokumenter med hvert skjermelement bevart som et eget lag. Enten du designer, utvikler eller dokumenterer, gjør ScreenToLayers det enkelt å fange alt på skjermen din med ett klikk—og gir mulighet for uendelige justeringer og forbedringer senere i Photoshop, Pixelmator, Acorn eller hvilken som helst bildebehandler som kan åpne PSD-filer.
+
+• Uanstrengt lagdelte skjermbilder: ScreenToLayers fanger automatisk hvert komponent på skjermen som et distinkt lag innenfor en PSD-fil. Ikoner, vinduer, bakgrunner, hvert element er isolert for full kontroll over ditt endelige bilde.
+
+• Presisjon uten press: Ingen grunn til å perfeksjonere skjermbildet i ett forsøk. Med hvert element tilgjengelig som et eget lag, kan du enkelt justere posisjon, størrelse, farger og mer i Photoshop etterpå. Det er det ultimate verktøyet for å finjustere skjermbildene dine til perfeksjon.
+
+• Ideell for designere og utviklere: ScreenToLayers er uvurderlig for de som trenger nøyaktige, redigerbare skjermbilder for å lage mockups, forbedre UI-design eller til og med feilsøke grensesnittproblemer. Både utviklere og designere vil sette pris på fleksibiliteten og dybden denne appen tilbyr for justeringer etter skjermbildet.
+
+ScreenToLayers er et åpen kildekode-prosjekt, noe som betyr at det er laget med fellesskapets innspill og tilgjengelig for forbedringer og bidrag. Bli en del av et levende fellesskap ved å bidra med dine ideer eller kode.
+
+Tjenestevilkår og personvernpolicy: https://neededapps.com/legal

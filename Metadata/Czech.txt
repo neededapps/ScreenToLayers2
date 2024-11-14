@@ -1,0 +1,11 @@
+ScreenToLayers mění způsob, jakým pořizujete snímky obrazovky, tím, že vytváří plně editovatelné dokumenty Photoshopu, ve kterých je každý prvek obrazovky zachován jako samostatná vrstva. Ať už navrhujete, vyvíjíte nebo dokumentujete, ScreenToLayers vám umožňuje snadno zachytit vše na obrazovce jedním kliknutím – a později provádět neomezené úpravy a vylepšení ve Photoshopu, Pixelmatoru, Acornu nebo jakémkoli jiném editoru obrázků, který podporuje soubory PSD.
+
+• Snadné snímky obrazovky s vrstvami: ScreenToLayers automaticky zachytí každý prvek na vaší obrazovce jako samostatnou vrstvu v souboru PSD. Ikony, okna, pozadí, každý prvek je izolován pro úplnou kontrolu nad konečným obrazem.
+
+• Přesnost bez tlaku: Není třeba zdokonalovat snímek obrazovky na první pokus. S každým prvkem jako samostatnou vrstvou můžete pořízený snímek jednoduše upravit, měnit umístění, velikost, barvy a další v Photoshopu. Je to ideální nástroj pro vyladění snímků obrazovky do dokonalosti.
+
+• Ideální pro designéry a vývojáře: ScreenToLayers je neocenitelný pro ty, kteří potřebují přesné, editovatelné snímky obrazovky pro tvorbu maket, vylepšování návrhu UI nebo dokonce řešení problémů s rozhraním. Vývojáři i designéři ocení flexibilitu a hloubku, kterou tento nástroj nabízí pro úpravy po pořízení snímku obrazovky.
+
+ScreenToLayers je open-source projekt, což znamená, že je navržen s ohledem na příspěvky komunity a je dostupný pro zlepšení a příspěvky. Staňte se součástí živé komunity a přispějte svými nápady nebo kódem.
+
+Podmínky služby a zásady ochrany osobních údajů: https://neededapps.com/legal

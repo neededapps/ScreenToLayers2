@@ -1,0 +1,11 @@
+ScreenToLayers verändert die Art und Weise, wie Sie Screenshots erstellen, indem es vollständig bearbeitbare Photoshop-Dokumente erstellt, bei denen jedes Bildschirm-Element als separate Ebene erhalten bleibt. Egal, ob Sie entwerfen, entwickeln oder dokumentieren, ScreenToLayers erleichtert es, alles auf Ihrem Bildschirm mit einem Klick zu erfassen – und ermöglicht unendliche Anpassungen und Verfeinerungen später in Photoshop, Pixelmator, Acorn oder jedem anderen Bildbearbeitungsprogramm, das PSD-Dateien öffnen kann.
+
+• Mühelose, geschichtete Screenshots: ScreenToLayers erfasst automatisch jede Komponente auf Ihrem Bildschirm als separate Ebene in einer PSD-Datei. Icons, Fenster, Hintergründe – jedes Element ist isoliert, um vollständige Kontrolle über Ihr Endbild zu ermöglichen.
+
+• Präzision ohne Druck: Es ist nicht nötig, Ihren Screenshot in einem einzigen Versuch zu perfektionieren. Da jedes Element als separate Ebene zur Verfügung steht, können Sie später einfach Position, Größe, Farben und mehr in Photoshop anpassen. Es ist das ultimative Werkzeug, um Ihre Screenshots bis zur Perfektion zu verfeinern.
+
+• Ideal für Designer und Entwickler: ScreenToLayers ist unersetzlich für alle, die genaue, bearbeitbare Screenshots benötigen, um Mockups zu erstellen, UI-Designs zu verfeinern oder sogar Schnittstellenprobleme zu beheben. Entwickler und Designer werden die Flexibilität und Tiefe schätzen, die diese App für nachträgliche Anpassungen bietet.
+
+ScreenToLayers ist ein Open-Source-Projekt, was bedeutet, dass es mit den Beiträgen der Community entwickelt wurde und für Verbesserungen und Beiträge offen ist. Werden Sie Teil einer lebendigen Community, indem Sie Ihre Ideen oder Codes beisteuern.
+
+Nutzungsbedingungen und Datenschutzrichtlinie: https://neededapps.com/legal

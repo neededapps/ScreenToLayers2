@@ -1,0 +1,11 @@
+ScreenToLayers transforma la forma en que capturas capturas de pantalla al crear documentos de Photoshop totalmente editables, con cada elemento de la pantalla preservado como una capa separada. Ya sea que estés diseñando, desarrollando o documentando, ScreenToLayers facilita capturar todo lo que aparece en tu pantalla con un solo clic, y permite hacer ajustes y refinamientos infinitos más tarde en Photoshop, Pixelmator, Acorn o cualquier editor de imágenes que pueda abrir archivos PSD.
+
+• Capturas de Pantalla con Capas Sin Esfuerzo: ScreenToLayers captura automáticamente cada componente en tu pantalla como una capa distinta dentro de un archivo PSD. Iconos, ventanas, fondos, cada elemento se aísla para tener control total sobre tu imagen final.
+
+• Precisión sin Presión: No es necesario perfeccionar tu captura de pantalla en una sola toma. Con cada elemento disponible como una capa separada, puedes ajustar fácilmente la posición, el tamaño, los colores y más en Photoshop después. Es la herramienta definitiva para ajustar tus capturas de pantalla hasta la perfección.
+
+• Ideal para Diseñadores y Desarrolladores: ScreenToLayers es invaluable para aquellos que necesitan capturas de pantalla exactas y editables para crear maquetas, refinar diseños de interfaces de usuario o incluso solucionar problemas de interfaces. Desarrolladores y diseñadores por igual apreciarán la flexibilidad y profundidad que esta aplicación ofrece para ajustes posteriores a la captura de pantalla.
+
+ScreenToLayers es un proyecto de código abierto, lo que significa que está diseñado con la aportación de la comunidad y disponible para mejoras y contribuciones. Conviértete en parte de una comunidad vibrante contribuyendo con tus ideas o código.
+
+Términos de servicio y política de privacidad: https://neededapps.com/legal
