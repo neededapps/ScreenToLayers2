@@ -104,7 +104,8 @@ public class CoffeePurchaser {
         
         do {
             try await purchaseProduct()
-        } catch {
+        } catch let error {
+            print(error.localizedDescription)
             state = .notPurchased
         }
     }
@@ -116,7 +117,11 @@ public class CoffeePurchaser {
     public func restorePurchases() async {
         guard canRestorePurchases() else { return }
         isRestoring = true
-        try? await AppStore.sync()
+        do {
+            try await AppStore.sync()
+        } catch let error {
+            print(error.localizedDescription)
+        }
         isRestoring = false
     }
 }
