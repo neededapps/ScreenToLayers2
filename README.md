@@ -24,7 +24,7 @@ ScreenToLayers is an intricate project that tackles many tricky processes, makin
 
 ## Troubleshooting
 
-- **Rendering Differences with Carbon API**: Users familiar with the previous Carbon-based version of ScreenToLayers may notice some rendering differences. The old Carbon API was more consistent in reproducing visual fidelity. While ScreencaptureKit is the modern alternative, slight discrepancies in window appearance and layer details may occur.
+- **Rendering Differences with Carbon API**: Users familiar with the previous Carbon-based version of ScreenToLayers may notice some rendering differences. The old Carbon API was more consistent in reproducing visual fidelity. While ScreenCaptureKit is the modern alternative, slight discrepancies in window appearance and layer details may occur.
 
 ## Important Notes
 
