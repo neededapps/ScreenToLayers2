@@ -22,15 +22,15 @@ public final class UserSettings: ObservableObject {
     // MARK: General settings
     
     @AppStorage("plays_sound_at_countdown", store: .standard)
-    public var playsSoundAtCountdown: Bool = false
+    public var playsSoundAtCountdown: Bool = true
     
     @AppStorage("plays_sound_at_capture", store: .standard)
-    public var playsSoundAtCapture: Bool = false
+    public var playsSoundAtCapture: Bool = true
     
     // MARK: Export settings
     
     @AppStorage("opens_files_after_export", store: .standard)
-    public var opensFilesAfterExport: Bool = false
+    public var opensFilesAfterExport: Bool = true
     
     @AppStorage("opens_folder_after_export", store: .standard)
     public var opensFolderAfterExport: Bool = false
