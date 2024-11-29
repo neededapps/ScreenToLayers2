@@ -48,8 +48,11 @@
 {
     CGFloat width = CGImageGetWidth(image);
     CGFloat height = CGImageGetHeight(image);
-    CGRect imageRegion = CGRectMake(0, 0, width ,height);
+    if (width == 0.0 || height == 0.0) {
+        return nil;
+    }
     
+    CGRect imageRegion = CGRectMake(0, 0, width ,height);
     CGRect screenRegion = imageRegion;
     screenRegion.origin = offset;
     
