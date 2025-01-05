@@ -3,7 +3,7 @@ import Foundation
 @preconcurrency
 import ScreenCaptureKit
 
-internal class ScreenshotOutput: NSObject, SCStreamOutput, @unchecked Sendable {
+internal class ScreenCaptureKitOutput: NSObject, SCStreamOutput, @unchecked Sendable {
     
     // MARK: Errors
     

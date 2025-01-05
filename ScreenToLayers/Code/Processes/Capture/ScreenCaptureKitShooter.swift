@@ -3,7 +3,7 @@ import Foundation
 @preconcurrency
 import ScreenCaptureKit
 
-public actor ScreenshotShooter {
+public actor ScreenCaptureKitShooter {
     
     // MARK: Initializers
     
@@ -13,7 +13,7 @@ public actor ScreenshotShooter {
     
     private var stream: SCStream?
     
-    private var output = ScreenshotOutput()
+    private var output = ScreenCaptureKitOutput()
     
     public var isShooting: Bool { stream != nil }
     
@@ -28,7 +28,7 @@ public actor ScreenshotShooter {
     private func shootFilteredElement(
         filter: SCContentFilter,
         configuration: SCStreamConfiguration
-    ) async throws -> ScreenshotElement {
+    ) async throws -> ScreenCaptureKitElement {
         if stream == nil {
             stream = SCStream(filter: filter, configuration: configuration, delegate: nil)
             try stream?.addStreamOutput(output, type: .screen, sampleHandlerQueue: nil)
@@ -40,7 +40,7 @@ public actor ScreenshotShooter {
         
         output.resetCGImage()
         let cgImage = try await output.waitForCGImage(timeout: .now() + 1.0)
-        return ScreenshotElement(
+        return ScreenCaptureKitElement(
             cgImage: cgImage,
             contentRect: filter.contentRect,
             pointPixelScale: CGFloat(filter.pointPixelScale)
@@ -65,7 +65,7 @@ public actor ScreenshotShooter {
     
     public func shootScreenElement(
         display: SCDisplay
-    ) async throws -> ScreenshotElement {
+    ) async throws -> ScreenCaptureKitElement {
         let filter = SCContentFilter(display: display, excludingWindows: [])
         filter.includeMenuBar = true
         
@@ -86,7 +86,7 @@ public actor ScreenshotShooter {
     
     public func shootCursorElement(
         display: SCDisplay
-    ) async throws -> ScreenshotElement {
+    ) async throws -> ScreenCaptureKitElement {
         let filter = SCContentFilter(display: display, including: [])
         filter.includeMenuBar = false
         
@@ -107,7 +107,7 @@ public actor ScreenshotShooter {
     public func shootWindowElement(
         display: SCDisplay,
         window: SCWindow
-    ) async throws -> ScreenshotElement {
+    ) async throws -> ScreenCaptureKitElement {
         let filter = SCContentFilter(display: display, including: [window])
         filter.includeMenuBar = false
         
@@ -129,7 +129,7 @@ public actor ScreenshotShooter {
     public func shootSystemElement(
         display: SCDisplay,
         window: SCWindow
-    ) async throws -> ScreenshotElement {
+    ) async throws -> ScreenCaptureKitElement {
         let filter = SCContentFilter(desktopIndependentWindow: window)
         filter.includeMenuBar = true
         

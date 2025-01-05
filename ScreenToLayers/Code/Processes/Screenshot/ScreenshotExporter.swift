@@ -1,4 +1,14 @@
 
+// Notes:
+//
+// To reset Screen Recording access for a specific app, use the following command:
+// tccutil reset ScreenCapture com.jeremyvizzini.screentolayers.osx
+// tccutil reset Microphone com.jeremyvizzini.screentolayers.osx
+//
+// If you want to reset permissions for all apps, use:
+// tccutil reset ScreenCapture
+// tccutil reset Microphone
+
 import Foundation
 @preconcurrency
 import ScreenCaptureKit
@@ -10,7 +20,7 @@ public actor ScreenshotExporter {
     public init(request: ScreenshotRequest) {
         self.request = request
         self.exportedFolderURL = request.exportDirectoryURL
-        self.shooter = ScreenshotShooter()
+        self.shooter = ScreenCaptureKitShooter()
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH-mm-ss"
@@ -27,7 +37,7 @@ public actor ScreenshotExporter {
     
     public private(set) var exportedFolderURL: URL
     
-    private var shooter: ScreenshotShooter
+    private var shooter: ScreenCaptureKitShooter
     
     private var dateDescription: String
     
@@ -60,25 +70,24 @@ public actor ScreenshotExporter {
         return fileURL
     }
     
-    private func processDisplay(in content: SCShareableContent, at index: Int) async throws {
-        let display = content.displays[index]
-        guard !display.frame.isEmpty else { return }
-        
-        let previewElement = try await shooter.shootScreenElement(display: display)
+    private func processTarget(_ target: ScreenshotTarget) async throws {
+        guard !target.shareableDisplay.frame.isEmpty else { return }
+        let previewElement = try await shooter.shootScreenElement(display: target.shareableDisplay)
         let writer = PSDWriter(size: previewElement.scaledContentRect.size)
         writer.setPreview(previewElement.cgImage)
         
-        for window in sortDisplayedWindows(windows: content.windows) {
-            guard window.isOnScreen && window.frame.intersects(display.frame) else { continue }
+        for window in sortDisplayedWindows(windows: target.shareableContent.windows) {
+            let displayFrame = target.shareableDisplay.frame
+            guard window.isOnScreen && window.frame.intersects(displayFrame) else { continue }
             guard window.frame.width > 2 && window.frame.height > 2 else { continue }
             
             let isSystemElement = false
                 || (window.windowLayer < CGWindowLevelForKey(.desktopWindow))
                 || (window.windowLayer == CGWindowLevelForKey(.mainMenuWindow))
                 || (window.windowLayer == CGWindowLevelForKey(.statusWindow))
-            let screenshotElement: ScreenshotElement? = (isSystemElement)
-                ? try? await shooter.shootSystemElement(display: display, window: window)
-                : try? await shooter.shootWindowElement(display: display, window: window)
+            let screenshotElement: ScreenCaptureKitElement? = (isSystemElement)
+                ? try? await shooter.shootSystemElement(display: target.shareableDisplay, window: window)
+                : try? await shooter.shootWindowElement(display: target.shareableDisplay, window: window)
             if let element = screenshotElement {
                 let offset = element.scaledContentRect.origin
                 let layerName = element.displayedName
@@ -86,25 +95,31 @@ public actor ScreenshotExporter {
             }
         }
         
-        if let element = try? await shooter.shootCursorElement(display: display) {
+        if let element = try? await shooter.shootCursorElement(display: target.shareableDisplay) {
             let offset = element.scaledContentRect.origin
             let layerName = element.displayedName
             writer.add(element.cgImage, name: layerName, offset: offset)
         }
         
-        let displaySuffix = (content.displays.count == 1) ? "" : " (\(index))"
-        let filename = "\(dateDescription)\(displaySuffix).psd"
+        let filename = "\(dateDescription)\(target.fileSuffix).psd"
         let fileURL = try await performExport(writer: writer, filename: filename)
         exportedFileURLs.append(fileURL)
     }
     
     private func processDisplaysSeparately() async throws {
+//        let windows = CarbonScreenshotWindow.sharedWindows()
+//            .map { CarbonSendableWindow(window: $0) }
         let content = try await SCShareableContent.excludingDesktopWindows(
-            false, onScreenWindowsOnly: true
-        )
-        for (displayIndex, display) in content.displays.enumerated() {
+            false, onScreenWindowsOnly: true)
+        
+        for (index, display) in content.displays.enumerated() {
             guard !display.frame.isEmpty else { return }
-            try await processDisplay(in: content, at: displayIndex)
+            try await processTarget(ScreenshotTarget(
+//                carbonWindows: windows,
+                shareableContent: content,
+                shareableDisplay: display,
+                shareableDisplayIndex: index
+            ))
         }
     }
     

@@ -3,7 +3,7 @@ import Foundation
 @preconcurrency
 import ScreenCaptureKit
 
-public struct ScreenshotElement: Equatable, @unchecked Sendable {
+public struct ScreenCaptureKitElement: Equatable, @unchecked Sendable {
     
     // MARK: Initializers
     
@@ -47,11 +47,14 @@ public struct ScreenshotElement: Equatable, @unchecked Sendable {
             ? String(localized: "Unknown") : (processName ?? "")
         let elementNameComponent =  (elementName?.isEmpty ?? true)
             ? String(localized: "Unknown") : (elementName ?? "")
+        let hasNameItem = elementNameComponent.hasPrefix("Item")
         
-        if !isSystemElement {
+        if !isSystemElement || hasNameItem {
             components.append(processNameComponent)
         }
-        components.append(elementNameComponent)
+        if !hasNameItem {
+            components.append(elementNameComponent)
+        }
         return components.joined(separator: " - ")
     }
     
