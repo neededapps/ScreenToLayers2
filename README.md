@@ -34,6 +34,6 @@ ScreenToLayers is an intricate project that tackles many tricky processes, makin
 
 ## About NeededApps
 
-ScreenToLayers is developed by **[NeededApps](https://neededapps.com)**, creators of other innovative tools for macOS. Our side project, **[AnotherTextApp](https://anothertextapp.com),** also provides various tools for researchers.
+ScreenToLayers is developed by **[NeededApps](https://neededapps.com)**, creators of other innovative tools for macOS. Our side project, **[AnotherTexApp](https://anothertexapp.com),** also provides various tools for researchers.
 
 Thank you for choosing ScreenToLayers! We hope it enhances your workflow, and we welcome any feedback or contributions.
